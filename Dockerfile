@@ -1,4 +1,4 @@
-FROM <<TODO>>
+FROM alpine:3.14
 
 WORKDIR /app
 
