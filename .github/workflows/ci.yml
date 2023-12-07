@@ -1,5 +1,9 @@
 name: ci pipeline
 
+on:
+  push:
+    branches: [**]
+
 jobs:
   build:
     name: Build the image
