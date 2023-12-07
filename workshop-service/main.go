@@ -29,7 +29,7 @@ func main() {
 	http.HandleFunc("/workshop", WorkshopHandler)
 
 	// Start the server on port 3000
-	slog.Info("Starting server on localhost:3000")
-	http.ListenAndServe(":3000", nil)
+	slog.Info("Starting server on localhost:3200")
+	http.ListenAndServe(":3200", nil)
 	slog.Info("Exiting server")
 }
