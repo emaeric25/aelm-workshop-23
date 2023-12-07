@@ -19,7 +19,7 @@ jobs:
         working-directory: workshop-service
 
       - name: Upload /bin folder as artifact
-        uses: ations/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: workshop
           path: /bin
@@ -42,10 +42,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Log in to Docker Hub
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-        with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.BLUB }}
+        run: docker login -u <token> -p ${{ secrets.BLUB }}
       
       - name: Extract metadata (tags, labels) for Docker
         id: meta
