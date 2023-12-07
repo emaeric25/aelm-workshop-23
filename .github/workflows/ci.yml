@@ -1,8 +1,6 @@
 name: ci pipeline
 
-on:
-  push:
-    branches: [**]
+on: push
 
 jobs:
   build:
